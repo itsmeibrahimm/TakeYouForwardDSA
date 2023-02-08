@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
 public class MergeOverlappingSubIntervals {
 
     static ArrayList < List < Integer >> merge(ArrayList < List < Integer >> intervals) {
@@ -34,6 +35,7 @@ public class MergeOverlappingSubIntervals {
                 v.add(intervals.get(i).get(0));
                 v.add(intervals.get(i).get(1));
                 merged.add(v);
+                System.out.println("Merged Size: "+merged.size());
                 System.out.println("New comer : "+ merged.get(merged.size()-1));
             } else {
             	System.out.println("Existing Merged Size: "+merged.size());
